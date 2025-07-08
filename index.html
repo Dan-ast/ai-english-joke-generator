@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+    </style>
     <title>AI English Joke Generator</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the AI English Joke Generator</h1>
-    </header>
-    <main>
-        <form>
-            <input type="text" placeholder="Enter the topic of the English joke" autofocus required autocomplete="off"/>
-            <input type="submit" />
-        </form>
-        <div>
-            An English joke is going to be here...
-        </div>
-    </main>
 
-    <footer>This AI project was coded by <a href="https://github.com/Dan-ast" target="_blank">Anastasiia Dekret</a> and is 
-        <a href="https://github.com/Dan-ast/ai-english-joke-generator" target="_blank">open-sourced on Github</a> and hosted 
-        <a href="https://ai-english-joke-generator.netlify.app/" target="_blank">on Netlify.</a></footer>
-    
+    <div class="container">
+        <header>
+                <h1>Welcome to the AI English Joke Generator</h1>
+        </header>
+        <main>
+            <form>
+                <input class="instructions" type="text" placeholder="Enter the topic of the English joke" autofocus required autocomplete="off"/>
+                <input type="submit" class="submit-button">
+            </form>
+            <div class="joke">
+                An English joke is going to be here...
+            </div>
+        </main>
+
+        <footer>
+            This AI project was coded by 
+            <a href="https://github.com/Dan-ast" target="_blank">Anastasiia Dekret</a>
+             and is 
+            <a href="https://github.com/Dan-ast/ai-english-joke-generator" target="_blank">open-sourced on Github</a>
+             and hosted 
+            <a href="https://ai-english-joke-generator.netlify.app/" target="_blank">on Netlify</a>.
+        </footer>
+    </div>
+
 </body>
 </html>
