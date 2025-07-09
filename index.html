@@ -7,6 +7,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
     </style>
+    <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
     <title>AI English Joke Generator</title>
 </head>
 <body>
@@ -16,13 +17,11 @@
                 <h1>Welcome to the AI English Joke Generator</h1>
         </header>
         <main>
-            <form>
+            <form id="joke-generator-form">
                 <input class="instructions" type="text" placeholder="Enter the topic of the English joke" autofocus required autocomplete="off"/>
                 <input type="submit" class="submit-button">
             </form>
-            <div class="joke">
-                An English joke is going to be here...
-            </div>
+            <div class="joke" id="joke"></div>
         </main>
 
         <footer>
@@ -35,5 +34,6 @@
         </footer>
     </div>
 
+    <script src="src/index.js"></script>
 </body>
 </html>
