@@ -8,6 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
     </style>
     <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI English Joke Generator</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         </header>
         <main>
             <form id="joke-generator-form">
-                <input class="instructions" type="text" placeholder="Enter the topic of the English joke" autofocus required autocomplete="off"/>
+                <input class="instructions" id="user-instructions" type="text" placeholder="Enter the topic of the English joke" autofocus required autocomplete="off"/>
                 <input type="submit" class="submit-button">
             </form>
             <div class="joke" id="joke"></div>
