@@ -21,10 +21,6 @@ function generateJoke(event) {
     jokeElement.classList.remove("hidden");
     jokeElement.innerHTML = `<span class="blink"> ⌛ <span>Generating a joke about ${instructionsInput.value}... `;
 
-    console.log("Generating a joke...");
-    console.log(`Context: ${context}`);
-    console.log(`Prompt: ${prompt}`);
-
     axios.get(apiUrl).then(displayJoke);
 }
 
