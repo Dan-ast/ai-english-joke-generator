@@ -20,13 +20,23 @@ h1 {
     color: #1a1c1a;
 }
 
-form {
+.form-container {
     padding: 25px;
     background-color: #f0e7d8;
     border-radius: 30px;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.09);
     margin-bottom: 30px;
+}
+
+form {
     display: flex;
+}
+
+.hint {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    opacity: 0.7;
 }
 
 .instructions {
@@ -47,6 +57,10 @@ form {
     font-size: 16px;
     border: none;
     border-radius: 50px;
+}
+
+.hidden {
+    display: none;
 }
 
 .joke {
@@ -71,4 +85,13 @@ footer {
     margin-top: 30px;
     text-align: center;
     font-size: 13px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
